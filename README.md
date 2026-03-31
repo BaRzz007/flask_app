@@ -1,16 +1,27 @@
-# Install flask
-pip install flask flask-mysqldb werkzeug
+# A Flask App
+## Install flask
+`pip install flask flask-mysqldb werkzeug`
 
-#setup database
+## setup database 
+include a .env file with the following parameters
+* MYSQL_HOST - hostname (usually 'localhost' if mysql server is hosted locally)
+* MYSQL_USER - username
+* MYSQL_PASSWORD - password
+* MYSQL_DB - name of the database
+* MYSQL_PORT - port for the database
 
-python3 -m venv venv
-source venv/bin/activate - macOS/Linux
-venv\Scripts\activate - windows
-pip install Flask
-pip freeze
-flask --version
+## Setup virtual environment
+`python3 -m venv venv`
+### for macos/Linux
+`source venv/bin/activate`
+### for windows
+`venv\Scripts\activate`
 
-python -m pip install flask
+## install required packages
 
-# run the ap
-python app.py
+`pip install -r requirements.txt`
+`pip freeze` - confirm installed packages
+`flask --version` - confirm flask version
+
+## Run the ap
+`python app.py`
