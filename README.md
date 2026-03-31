@@ -18,10 +18,12 @@ include a .env file with the following parameters
 `venv\Scripts\activate`
 
 ## install required packages
+```
+pip install -r requirements.txt
+pip freeze
+flask --version
+```
 
-`pip install -r requirements.txt`
-`pip freeze` - confirm installed packages
-`flask --version` - confirm flask version
 
 ## Run the ap
 `python app.py`
